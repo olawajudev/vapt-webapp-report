@@ -1,0 +1,20 @@
+## 📊 Executive Summary - Vulnerability Overview
+
+| ID | Vulnerability | CVSS | Severity |
+|----|---------------|------|----------|
+| WEB-001 | SQL Injection | 9.8 | 🔴 Critical |
+| WEB-002 | IDOR | 7.5 | 🟠 High |
+| WEB-003 | Weak JWT Secret | 8.1 | 🟠 High |
+| WEB-004 | Reflected XSS | 6.1 | 🟡 Medium |
+| WEB-005 | Missing Security Headers | 4.3 | 🟡 Medium |
+| WEB-006 | Verbose Error Messages | 3.7 | 🟢 Low |
+| WEB-007 | Outdated jQuery | 5.3 | 🟡 Medium |
+
+**Total Findings**: 7 vulnerabilities  
+**Critical**: 1 | **High**: 2 | **Medium**: 3 | **Low**: 1  
+**Overall Risk Rating**: 🔴 **HIGH** (Requires immediate remediation)
+
+**Key Risks**:
+- Critical SQL Injection in authentication flow could allow full database compromise
+- High-severity IDOR permits unauthorized access to user data
+- Weak JWT secret enables token forgery and session hijacking
